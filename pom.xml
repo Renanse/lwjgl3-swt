@@ -10,8 +10,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-		<lwjgl.version>3.2.1</lwjgl.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<lwjgl.version>3.2.3</lwjgl.version>
 		<swt.version>4.6.1</swt.version>
 	</properties>
 	<profiles>
@@ -28,13 +28,12 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>${maven-compiler-plugin.version}</version>
 						<configuration>
 							<excludes>
 								<exclude>**/PlatformLinux*.java</exclude>
-								<exclude>**/PlatformOSX*.java</exclude>
+								<exclude>**/PlatformMacOSX*.java</exclude>
 							</excludes>
 						</configuration>
 					</plugin>
@@ -94,13 +93,12 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>${maven-compiler-plugin.version}</version>
 						<configuration>
 							<excludes>
 								<exclude>**/PlatformWin32*.java</exclude>
-								<exclude>**/PlatformOSX*.java</exclude>
+								<exclude>**/PlatformMacOSX*.java</exclude>
 							</excludes>
 						</configuration>
 					</plugin>
@@ -159,7 +157,6 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>${maven-compiler-plugin.version}</version>
 						<configuration>
