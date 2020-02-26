@@ -8,7 +8,7 @@ apply plugin: 'java-library'
 
 description = 'LWJGL3 SWT'
 
-project.ext.lwjglVersion = "3.2.2"
+project.ext.lwjglVersion = "3.2.3"
 project.ext.swtVersion = "3.109.0"
 
 tasks.withType(JavaCompile) {
